@@ -1,0 +1,24 @@
+# Terraform working folder (providers, big binaries)
+.terraform/
+
+# State: Terraform's memory of real resources. Can hold secrets. Never commit.
+*.tfstate
+*.tfstate.*
+
+# Your real variable values (IP, paths). Commit the .example file instead.
+*.tfvars
+*.tfvars.json
+
+# Saved plans and crash logs
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+
+# Local overrides and CLI config
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
